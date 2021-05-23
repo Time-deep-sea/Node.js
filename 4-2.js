@@ -1,7 +1,7 @@
 const http = require('http');
 const server = new http.Server();
 
-server.on('require',function(req,res){
+server.on('request',function(req,res){
 	res.writeHead(200,{
 		'content-type': 'text/plain'
 	});
